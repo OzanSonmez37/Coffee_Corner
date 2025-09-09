@@ -42,7 +42,7 @@ Templating: Handlebars
 
 ## 📦 Installation
 # Clone the repository
-git clone https://github.com/yourusername/coffee-corner.git
+git clone [https://github.com/yourusername/coffee-corner.git](https://github.com/OzanSonmez37/Coffee_Corner)
 
 # Go into the project folder
 cd coffee-corner
