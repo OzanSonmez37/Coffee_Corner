@@ -1,8 +1,8 @@
-☕ Coffee Corner
+#☕ Coffee Corner
 
 A modern and dynamic coffee shop website built with Node.js and MongoDB, featuring a stylish UI, user management, and full admin control over menu items.
 
-🚀 Features
+##🚀 Features
 
 👤 User Side
 
@@ -28,7 +28,7 @@ A modern and dynamic coffee shop website built with Node.js and MongoDB, featuri
 
 👨‍💻 Full control panel for managing website content
 
-🛠️ Tech Stack
+##🛠️ Tech Stack
 
 Backend: Node.js + Express.js
 
@@ -40,7 +40,7 @@ Authentication: Express-session
 
 Templating: Handlebars
 
-📦 Installation
+##📦 Installation
 # Clone the repository
 git clone https://github.com/yourusername/coffee-corner.git
 
@@ -53,11 +53,9 @@ npm install
 # Start the server
 npm start
 
-
 Then open: http://localhost:3000
  
-
-📸 Screenshots
+##📸 Screenshots
 
 <img width="1903" height="1241" alt="Image" src="https://github.com/user-attachments/assets/7fe398df-31e6-46c7-9255-792126ac29dc" />
 
