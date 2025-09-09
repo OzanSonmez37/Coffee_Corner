@@ -3,6 +3,7 @@
 A modern and dynamic coffee shop website built with Node.js and MongoDB, featuring a stylish UI, user management, and full admin control over menu items.
 
 🚀 Features
+
 👤 User Side
 
 🏠 Home Page – Welcoming introduction with a call to action
