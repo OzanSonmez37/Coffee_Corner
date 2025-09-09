@@ -1,0 +1,28 @@
+<section class="register-section">
+    <div class="register-container">
+        <h2>Edit Coffee</h2>
+        <form action="/admin/coffees/{{coffees._id}}?_method=PUT" method="POST" class="register-form" enctype="multipart/form-data">
+        <input type="hidden", name="_method" value="PUT">
+            <label>Name:</label>
+            <input type="text" name="title" value="{{coffees.title}}" required="required">
+
+            <label>Content:</label>
+            <input type="text" name="content" value="{{coffees.content}}" required="required">
+
+            <label>Price:</label>
+            <input type="number" name="price" value="{{coffees.price}}" required="required">
+
+            <label>Category:</label>
+            <select name="category">
+               {{#each categories}}
+                  <option value="{{_id}}">{{name}}</option>
+               {{/each}}
+            </select>
+
+            <label>Image:</label>
+            <input type="file" name="coffee_image" required="required">
+
+            <button type="submit" class="btn">Edit Coffee</button>
+        </form>
+    </div>
+</section>

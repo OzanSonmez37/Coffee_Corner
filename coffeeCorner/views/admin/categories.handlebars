@@ -1,0 +1,47 @@
+<section class="links-section">
+  <div class="links-container">
+    <h2 style="color: #ef8f6b; font-size: 2.5rem; margin-bottom: 100px;" >Categories</h2>
+
+    {{!-- {{> admin-nav}} --}}
+
+    <div class="row">
+      <div class="col-md-4">
+        <form action="" method="POST" class="register-form" enctype="multipart/form-data">
+        <div class="form-group">
+          <label style="margin-bottom: 10px; font-size: 1.5rem;">Name:</label>
+            <input type="text" name="name" placeholder="Category Name " required="required" data-validation-required-message="Place enter category name.">
+        </div>
+        <button type="submit" class="btn">Add Category</button>
+        </form>
+      </div>
+      <div class="col-md-6 offset-md-2">
+        
+        <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>NAME</th>
+                  <th>DELETE</th>
+                </tr>
+                
+              </thead>
+              <tbody>     
+                {{#each categories}}           
+                <tr>
+                  <td>{{_id}}</td>
+                  <td>{{name}}</td>
+                  <td>
+                    <form action="/admin/categories/{{_id}}?_method=DELETE" method="POST">
+                      <input type="hidden" name="_method" value="DELETE">
+                      <button type="submit" class="btn btn-danger deleteButton">DELETE</button>
+                    </form>
+                  </td>
+                </tr>      
+                {{/each}}      
+              </tbody>
+            </table>
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<section class="contact-section">
+  <div class="contact-container">
+    <h2>Contact</h2>
+    {{#if sessionFlash.message}}
+      <div class="{{sessionFlash.type}} messageBox">
+        {{sessionFlash.message}}
+      </div>
+    {{/if}}
+    <form method="POST" action="/contact/email" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" name="name" required="required" />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" required="required" />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone" />
+
+      <label for="message">Message:</label>
+      <textarea name="message" rows="4" required="required"></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>

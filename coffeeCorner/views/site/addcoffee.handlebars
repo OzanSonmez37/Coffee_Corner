@@ -1,0 +1,27 @@
+<section class="register-section">
+    <div class="register-container">
+        <h2>Add Coffee</h2>
+        <form action="/posts/test" method="POST" class="register-form" enctype="multipart/form-data">
+            <label>Name:</label>
+            <input type="text" name="title" required="required">
+
+            <label>Content:</label>
+            <input type="text" name="content" required="required">
+
+            <label>Price:</label>
+            <input type="number" name="price" required="required">
+
+            <label>Category:</label>
+            <select name="category">
+               {{#each categories}}
+                  <option value="{{_id}}">{{name}}</option>
+               {{/each}}
+            </select>
+
+            <label>Image:</label>
+            <input type="file" name="coffee_image" required="required">
+
+            <button type="submit" class="btn">Add Coffee</button>
+        </form>
+    </div>
+</section>

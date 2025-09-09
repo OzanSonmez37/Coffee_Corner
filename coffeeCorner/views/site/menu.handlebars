@@ -1,0 +1,23 @@
+<section class="menu-section">
+  <div class="menu-container">
+    <h2>☕ Coffee Corner Menu</h2>
+
+    {{#if sessionFlash.message}}
+      <div class="{{sessionFlash.type}} messageBox">
+        {{sessionFlash.message}}
+      </div>
+    {{/if}}
+    
+    <div class="menu-grid">
+      {{#each posts}}
+      <div class="menu-item">
+        <img src="{{coffee_image}}" alt="Espresso">
+        <h3>{{title}}</h3>
+        <p>{{content}}</p>
+        <span>${{price}}</span>
+      </div>      
+      {{/each}}
+    </div>
+
+  </div>
+</section>
