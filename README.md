@@ -66,9 +66,3 @@ Then open: http://localhost:3000
 <img width="1900" height="1168" alt="Image" src="https://github.com/user-attachments/assets/68fb44f2-541f-424c-b939-5da221cacc05" />
 
 <img width="1903" height="1163" alt="Image" src="https://github.com/user-attachments/assets/17fe74c0-f14c-4282-bc1c-442d4331da51" />
-
-
-
-<img width="1901" height="1251" alt="Image" src="https://github.com/user-attachments/assets/81a9dde6-72b6-4f0b-9522-4d19002a2148" />
-
-<img width="1901" height="1249" alt="Image" src="https://github.com/user-attachments/assets/b6b8c862-edfa-46de-8728-322c7fa164f6" />
